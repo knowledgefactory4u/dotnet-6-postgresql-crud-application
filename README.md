@@ -9,7 +9,7 @@ You can start the api by running ```dotnet run``` from the command line in the p
 
 OR
 
-You can also start the application in debug mode in VS Code by opening the project root folder in VS Code and pressing F5 or by selecting Debug -> Start Debugging from the top menu, running in debug mode.
+You can also start the application in debug mode in Visula Studio by opening the project root folder in VS Code and pressing F5 or by selecting Debug -> Start Debugging from the top menu, running in debug mode.
 
 
 

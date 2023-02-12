@@ -2,6 +2,27 @@
 
 # Local Setup and Run the application
 
+<h2>Create database and table</h2>
+
+```CREATE DATABASE testdb;```
+```
+CREATE TABLE IF NOT EXISTS public.users
+(
+    id bigint NOT NULL DEFAULT nextval('users_id_seq'::regclass),
+    email character varying(100) COLLATE pg_catalog."default",
+    first_name character varying(100) COLLATE pg_catalog."default",
+    last_name character varying COLLATE pg_catalog."default",
+    CONSTRAINT primary_key_id PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.users
+    OWNER to postgres;
+```
+
 Download or clone the source code from GitHub to the local machine
 
 
